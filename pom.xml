@@ -50,10 +50,10 @@
     <urm-maven-plugin.version>2.1.1</urm-maven-plugin.version>
     <!-- SonarCloud -->
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    <sonar.organization>iluwatar</sonar.organization>
-    <sonar.projectKey>iluwatar_java-design-patterns</sonar.projectKey>
+    <sonar.organization>saquib1928</sonar.organization>
+    <sonar.projectKey>saquib1928_javapattern</sonar.projectKey>
     <sonar.moduleKey>${project.artifactId}</sonar.moduleKey>
-    <sonar.projectName>Java Design Patterns</sonar.projectName>
+    <sonar.projectName>javapattern</sonar.projectName>
   </properties>
   <modules>
     <module>abstract-factory</module>
@@ -421,4 +421,16 @@
       </plugin>
     </plugins>
   </build>
+      <distributionManagement>
+		<repository>
+		  <id>central</id>
+		  <name>a0n5tucjjiuir-artifactory-primary-0-releases</name>
+		  <url>https://ibt.jfrog.io/artifactory/ibt-libs-release</url>
+		</repository>
+		<snapshotRepository>
+		  <id>snapshots</id>
+		  <name>a0n5tucjjiuir-artifactory-primary-0-snapshots</name>
+		  <url>https://ibt.jfrog.io/artifactory/ibt-libs-snapshot</url>
+		</snapshotRepository>
+	  </distributionManagement>
 </project>
